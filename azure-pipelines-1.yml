@@ -31,7 +31,7 @@ jobs:
         Pip install selenium
         pip install webdriver-manager
         pip install webdrivermanager
-        pip install 
+        
       displayName: 'Install dependencies'
 
     # - script: |
