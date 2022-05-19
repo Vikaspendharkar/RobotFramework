@@ -31,6 +31,7 @@ jobs:
         Pip install selenium
         pip install webdriver-manager
         pip install webdrivermanager
+        npm install chromedriver
         
       displayName: 'Install dependencies'
 
@@ -38,5 +39,15 @@ jobs:
     #     pip install pytest pytest-azurepipelines
     #     pytest
     #   displayName: 'pytest'
-    - powershell: robot --pythonpath . TC1.robot
-      displayName: 'Run Robotframework python'
+    # - task: AzurePowerShell@5
+    #    inputs:
+    #     ScriptType: 'FilePath'
+    #     ScriptPath: 'https://github.com/Vikaspendharkar/RobotFramework/blob/11228809cfa08e2665bb3a3cc086be7dcc672dc6/RobotFramework/TC1.robot'
+    #     displayName: 'Run Robot Framework Tests'
+    #     continueOnError: true
+
+    - task: PythonScript@0
+      inputs:
+        scriptSource: 'filePath'
+        scriptPath: 'C:\Users\NISHITA-PC\PycharmProjects\RobotFramework\RobotFramework\TC1.robot'
+        arguments: 'sys.argv'
