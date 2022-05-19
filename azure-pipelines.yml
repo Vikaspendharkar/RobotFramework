@@ -1,0 +1,75 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python application
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pytest
+        pip install selenium
+        pip install webdriver-manager
+        pip install webdrivermanager
+        pip install robotframework
+        pip install robotframework-seleniumlibrary
+        pip install robotframework-selenium2library
+        pip install rpaframework 
+
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Lint with flake8
+      run: |
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Robot Framework Browser Action
+      # You may pin to the exact commit or the version.
+      # uses: GoleeTeam/robotframework-browser-action@7074355764d34a6dbf531c7ecfc10dd7d2aac65d
+      uses: GoleeTeam/robotframework-browser-action@v1.0-golee1
+      with:
+        # custom imagename for execute robot framework
+        image: ppodgorsek/robot-framework
+        # custom tag verion image for execute robot framework
+        image_version: latest
+        # Directory where Robot tests are located in the repository
+        tests_dir: robot_tests
+        # Where will the report from test be saved
+        reports_dir: reports
+        # Shared memory that Docker container is allowed to use
+        allowed_shared_memory: 1g
+        # Browser to use
+        browser: chrome
+        # Execute tests in parallel
+        robot_threads: 1
+        # Extra settings for parallel execution. https://github.com/mkorpela/pabot#command-line-options
+        pabot_options: https://github.com/mkorpela/pabot#command-line-options
+        # Color depth of the virtual screen
+        screen_color_depth: 24
+        # Height of the virtual screen
+        screen_height: 1080
+        # Width of the virtual screen
+        screen_width: 1920
+        
+    - powershell: robot --pythonpath . TC1.robot
+      displayname: 'Run robot framework script'
