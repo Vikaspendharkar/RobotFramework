@@ -30,12 +30,9 @@ steps:
           pip install rpaframework 
   displayName: 'Install dependencies'
 
-- powershell: robot **/TC1.robot
-  displayName: 'Run Robot Scripts'
-
-- task: PublishTestResults@2
-  inputs:
-    testResultsFiles: outputxunit.xml
-    searchFolder: 'D:\a\1\s\'
-  condition: succeededOrFailed()
-  displayName: 'Publish Test Results outputxunit.xml'
+- powershell: |
+    Write-Host "Robot Framework tests"
+    robot -x 'outputxunit.xml' '$(Build.SourcesDirectory)\Robotframework\.'
+    failOnStderr: true
+    displayName: 'Run Robot Framework Tests'
+    continueOnError: false
