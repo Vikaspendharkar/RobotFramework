@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'windows-2019'
+  vmImage: 'windows-latest'
 
 strategy:
   matrix:
@@ -30,15 +30,12 @@ steps:
           pip install rpaframework 
   displayName: 'Install dependencies'
 
-- powershell: |
-   Write-Host "Robot Framework tests"
-   robot $(Build.SourcesDirectory)\RobotFramework\TC1.robot
-  failOnStderr: true
-  displayName: 'Run Robot Framework Tests'
-  continueOnError: true
+- powershell: robot --pythonpath . -x outputxunit.xml TC1.robot
+  displayName: 'Run Robot Scripts'
 
 - task: PublishTestResults@2
-  displayName: 'Publish Test Results'
-  continueOnError: true
   inputs:
     testResultsFiles: outputxunit.xml
+    searchFolder: 'D:\a\1\s\'
+  condition: succeededOrFailed()
+  displayName: 'Publish Test Results outputxunit.xml'
