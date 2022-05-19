@@ -27,12 +27,12 @@ steps:
           pip install robotframework-seleniumlibrary
           pip install webdrivermanager
           pip install selenium
-          pip install rpaframework 
+          pip install rpaframework
   displayName: 'Install dependencies'
 
 - powershell: |
     Write-Host "Robot Framework tests"
-    robot -x 'outputxunit.xml' '$(Build.SourcesDirectory)\Robotframework\.'
+    robot -x 'outputxunit.xml' '$(Build.SourcesDirectory)\RobotFramework\.'
     failOnStderr: true
     displayName: 'Run Robot Framework Tests'
     continueOnError: false
