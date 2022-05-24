@@ -28,8 +28,9 @@ steps:
           pip install robotframework-seleniumlibrary
           pip install webdrivermanager
           pip install selenium
-          # pip install rpaframework-aws
-          # pip install rpaframework
+          pip install rpaframework-aws
+          pip install rpaframework
+          pip install RPA
   displayName: 'Install dependencies12'
 
 
