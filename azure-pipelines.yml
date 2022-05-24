@@ -22,7 +22,7 @@ steps:
     versionSpec: '$(python.version)'
     architecture: 'x64'
 
-- script: npm install chromedriver
+- script: 
           pip install robotframework
           pip install robotframework-pabot
           pip install robotframework-seleniumlibrary
