@@ -28,9 +28,17 @@ steps:
           pip install robotframework-seleniumlibrary
           pip install webdrivermanager
           pip install selenium
-          pip install rpaframework-aws
-          pip install rpaframework
-  displayName: 'Install dependencies'
+          # pip install rpaframework-aws
+          # pip install rpaframework
+  displayName: 'Install dependencies12'
+
+-  channels:
+    - conda-forge
+dependencies:
+    - python=3.10
+    - pip=20.1
+    - pip:
+        - rpaframework==14.1.1
 
 - powershell: robot $(System.DefaultWorkingDirectory)/RobotFramework/TC1.robot
   displayName: 'Run Robot Framework Tests'
