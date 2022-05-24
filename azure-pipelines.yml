@@ -30,6 +30,6 @@ steps:
           pip install rpaframework
   displayName: 'Install dependencies'
 
-- powershell: robot --pythonpath . -x outputxunit.xml **/RobotFramework/TC1.robot
+- powershell: robot --pythonpath . -x outputxunit.xml /RobotFramework/TC1.robot
   displayName: 'Run Robot Framework Tests'
     
