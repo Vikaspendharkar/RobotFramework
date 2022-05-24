@@ -32,13 +32,14 @@ steps:
           # pip install rpaframework
   displayName: 'Install dependencies12'
 
--  channels:
-    - conda-forge
-dependencies:
+  - channels:
+      - conda-forge
+  - dependencies:
     - python=3.10
     - pip=20.1
     - pip:
         - rpaframework==14.1.1
+    displatName:  'install RPA framework'
 
 - powershell: robot $(System.DefaultWorkingDirectory)/RobotFramework/TC1.robot
   displayName: 'Run Robot Framework Tests'
