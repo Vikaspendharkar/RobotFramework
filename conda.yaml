@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.7.5
+  - beautifulsoup4=4.11.1
+  - pip=20.1
+  - pip:
+      - rpaframework==14.1.1
