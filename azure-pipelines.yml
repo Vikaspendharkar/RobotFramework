@@ -20,14 +20,14 @@ steps:
           pip install robotframework
           pip install robotframework-pabot
           pip install robotframework-seleniumlibrary
-          pip install robotframework-selenium2library
+#           pip install robotframework-selenium2library
           pip install webdriver_manager
           pip install webdrivermanager
           pip install selenium
-          pip install pycryptodome
-          pip install rpaframework
-          pip install RPA
-          pip install RPAframework
+#           pip install pycryptodome
+#           pip install rpaframework
+#           pip install RPA
+#           pip install RPAframework
   displayName: 'Install dependencies12'
 
 
