@@ -17,9 +17,9 @@ LoginToApplaication
 
 
 SwichedTousername
-    Input Text  iD:search-switch-site  Omni Test
+    Input Text  id:search-switch-site  Omni Test
     Sleep    1
-    Press Keys  iD:search-switch-site   BACKSPACE
+    Press Keys  id:search-switch-site   BACKSPACE
     Sleep    1
     Click Element  xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/ul
     Sleep    1
