@@ -1,6 +1,8 @@
 *** Settings ***
 Library     Collections
-Library     RPA.Browser.Selenium
+#Library     RPA.Browser.Selenium
+Library     SeleniumLibrary
+#Library     Selenium2Library
 Library     DateTime
 Variables   ../Variablesfiles/Variables_files.py
 Library    String
@@ -18,13 +20,14 @@ SwichedTousername
     Input Text  iD:search-switch-site  Omni Test
     Sleep    1
     Press Keys  iD:search-switch-site   BACKSPACE
-    Click Element When Visible  xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/ul
+    Sleep    1
+    Click Element  xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/ul
     Sleep    1
 #    Press Keys    iD:search-switch-site     ENTER
 
 Forloopforswitchuser
     FOR    ${i}    IN RANGE    4
-            ${selusername}      RPA.Browser.Selenium.Get Text    xpath:/html/body/div[1]/div[1]/div/div[2]/div/a/span[1]/small
+            ${selusername}      Get Text    xpath:/html/body/div[1]/div[1]/div/div[2]/div/a/span[1]/small
             Log To Console      \n\n====================\n ${selusername}
             Log To Console      ====================\n
 
@@ -91,7 +94,7 @@ Copy Cannot Number
 
 
 Reprint & Manifests
-    Click Element When Visible      xpath://a[.='Reprint & Manifests']
+    Click Element      xpath://a[.='Reprint & Manifests']
     Sleep    15
 
     ${length} =         Get Length  ${cpyconnotenumber}
@@ -128,7 +131,7 @@ Reprint & Manifests
 
     ${length} =         Get Length  ${cpyconnotenumber}
         IF  ${length} == 0
-            ${conno}=  RPA.Browser.Selenium.Get Text    xpath:/html/body/div[1]/div[2]/div[2]/div[1]/form[2]/div/div/table/tbody/tr[1]/td[2]
+            ${conno}=  Get Text    xpath:/html/body/div[1]/div[2]/div[2]/div[1]/form[2]/div/div/table/tbody/tr[1]/td[2]
             ${Conno1}=  Fetch From Right    ${conno}    C
             Log To Console      \n\n====================\n CONNOTE NO.....1 IS :- \n ${conno}
             Log To Console      ====================\n
@@ -150,7 +153,7 @@ Shipment Report
     Sleep    1
     Scroll Element Into View    xpath://div[@id='myModal']//div[1]/table[@class='table table-bordered table-condensed col-md-12']//td[3]
     Sleep    1
-    ${carriertrackno}  RPA.Browser.Selenium.Get Text    xpath://div[@id='myModal']//div[1]/table[@class='table table-bordered table-condensed col-md-12']//td[3]
+    ${carriertrackno}  Get Text    xpath://div[@id='myModal']//div[1]/table[@class='table table-bordered table-condensed col-md-12']//td[3]
     Log To Console     \n\n====================\n Barcode No. Is :- \n ${carriertrackno}
     Log To Console     ====================\n
 
@@ -168,8 +171,10 @@ Shipment Report
 
 Check Scan - Origin Scanning
     Click Element    css:.nav > li:nth-of-type(3) > .dropdown-toggle
-    Click Element When Visible    css:.nav > li:nth-of-type(3) > .dropdown-menu > li:nth-of-type(1) > a
-    Input Text When Element Is Visible    id:barcode    ${cpyconnotenumber}[1]
+    Sleep    2
+    Click Element    css:.nav > li:nth-of-type(3) > .dropdown-menu > li:nth-of-type(1) > a
+    Sleep    2
+    Input Text    id:barcode    ${cpyconnotenumber}[1]
     Click Button    id:btnsubmit
     Sleep    1
     ${Last_Scan_Barcode}  Get Text    xpath:/html/body/div[1]/div[2]/div[2]/div[1]/form/div[8]/div/div
@@ -179,8 +184,10 @@ Check Scan - Origin Scanning
 
 Consolidate to MAWB
     Click Element    css:.nav > li:nth-of-type(3) > .dropdown-toggle
-    Click Element When Visible    css:.nav > li:nth-of-type(3) li:nth-of-type(9) > a
-    Click Element When Visible    id:ConsolidationHubId
+    Sleep    2
+    Click Element    css:.nav > li:nth-of-type(3) li:nth-of-type(9) > a
+    Sleep    2
+    Click Element    id:ConsolidationHubId
     Select From List By Label     id:ConsolidationHubId    TEST
     Sleep    1
     Select Checkbox    css:[data-manifest="${cpyconnotenumber}[2]"][name='selected']
@@ -220,14 +227,15 @@ Consolidate to MAWB
     Log To Console    ${Next_Date}
     Input Text        id:ETA    ${Next_Date}
 
-    Click Button When Visible    css:.ui-datepicker-close
+    Sleep    2
+    Click Button    css:.ui-datepicker-close
     Sleep    1
     Click Button    id:consolidateButton
     Sleep    2
 
     TRY
        ${message}=  Handle Alert   action=ACCEPT
-       Is Alert Present
+
        Log To Console  \n\n====================\n MAWB allocate Alert Msg Is :- \n ${message}
        Log To Console  ====================\n
        Sleep    5
@@ -238,10 +246,12 @@ Consolidate to MAWB
 
 
 Import >> Customs Release Check
-    Click Element When Visible    css:.nav > li:nth-of-type(4) > .dropdown-toggle
+    Sleep    2
+    Click Element    css:.nav > li:nth-of-type(4) > .dropdown-toggle
     Sleep    0.5
-    Click Element When Visible    xpath://a[.='Customs Release Check']
-    Click Element When Visible    xpath://span[.='Select']
+    Click Element    xpath://a[.='Customs Release Check']
+    Sleep    2
+    Click Element    xpath://span[.='Select']
     Input Text     xpath://div[@class='chosen-search']/input[1]    ${cpyconnotenumber}[3]${cpyconnotenumber}[4]
     Sleep    1
     Press Keys     xpath://div[@class='chosen-search']/input[1]  ENTER

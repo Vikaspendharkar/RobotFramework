@@ -1,6 +1,7 @@
 *** Settings ***
 Library     Collections
-Library     RPA.Browser.Selenium
+Library     SeleniumLibrary
+#Library     Selenium2Library
 Variables   Variablesfiles/Variables_files.py
 Resource    Keywordsfile/Omniparcelkeywords.robot
 Library    Process
@@ -8,7 +9,7 @@ Library    Process
 
 *** Test Cases ***
 Login with InValid Credentials
-    Open Chrome Browser  ${Login_url}[0]
+    Open Browser  ${Login_url}[1]   chrome
     Maximize Browser Window
     LoginToApplaication  vikas@omniparcel.com    Vikas@1234
     Page Should Contain    Login was unsuccessful
@@ -27,7 +28,7 @@ Create Outbound & Export
 Get Manifest for Shipment
     Reprint & Manifests
 Fetch Shipment Report
-    Open Chrome Browser       ${Shipingurlweb1}[0]
+    Open Browser       ${Shipingurlweb1}[1]     chrome
     Maximize Browser Window
     LoginToApplaication     vikas@omniparcel.com    Vikas@123
     SwichedTousername

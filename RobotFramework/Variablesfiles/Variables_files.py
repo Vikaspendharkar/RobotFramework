@@ -1,4 +1,4 @@
-Chrome_browser = "chrome"
+browser = "chrome"
 Login_url = ["https://op-web1.omniparcel.com/", "https://op-web2.omniparcel.com/", "https://op-web3.omniparcel.com/",
              "https://op-web4.omniparcel.com/", "https://op-web5.omniparcel.com/"]
 
