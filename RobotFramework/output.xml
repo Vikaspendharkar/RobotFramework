@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220525 15:00:39.555" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220526 10:40:19.285" rpa="false" schemaversion="3">
 <suite id="s1" name="TC1" source="C:\Users\NISHITA-PC\PycharmProjects\RobotFramework\RobotFramework\TC1.robot">
 <test id="s1-t1" name="Login with InValid Credentials" line="11">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${Login_url}[1]</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220525 15:00:39.828" level="INFO">Opening browser 'chrome' to base url 'https://op-web2.omniparcel.com/'.</msg>
-<status status="PASS" starttime="20220525 15:00:39.828" endtime="20220525 15:00:53.931"/>
+<msg timestamp="20220526 10:40:19.754" level="INFO">Opening browser 'chrome' to base url 'https://op-web2.omniparcel.com/'.</msg>
+<status status="PASS" starttime="20220526 10:40:19.753" endtime="20220526 10:40:30.411"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220525 15:00:53.931" endtime="20220525 15:00:54.051"/>
+<status status="PASS" starttime="20220526 10:40:30.412" endtime="20220526 10:40:30.532"/>
 </kw>
 <kw name="LoginToApplaication" library="Omniparcelkeywords">
 <arg>vikas@omniparcel.com</arg>
@@ -20,31 +20,31 @@
 <arg>id:UserName</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:00:54.053" level="INFO">Typing text 'vikas@omniparcel.com' into text field 'id:UserName'.</msg>
-<status status="PASS" starttime="20220525 15:00:54.052" endtime="20220525 15:00:54.138"/>
+<msg timestamp="20220526 10:40:30.533" level="INFO">Typing text 'vikas@omniparcel.com' into text field 'id:UserName'.</msg>
+<status status="PASS" starttime="20220526 10:40:30.533" endtime="20220526 10:40:30.620"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:00:54.139" level="INFO">Typing text 'Vikas@1234' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220525 15:00:54.138" endtime="20220525 15:00:54.220"/>
+<msg timestamp="20220526 10:40:30.620" level="INFO">Typing text 'Vikas@1234' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220526 10:40:30.620" endtime="20220526 10:40:30.716"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[@class='btn btn-lg btn-primary btn-block btn-signin']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:00:54.220" level="INFO">Clicking element 'xpath://button[@class='btn btn-lg btn-primary btn-block btn-signin']'.</msg>
-<status status="PASS" starttime="20220525 15:00:54.220" endtime="20220525 15:00:54.575"/>
+<msg timestamp="20220526 10:40:30.716" level="INFO">Clicking element 'xpath://button[@class='btn btn-lg btn-primary btn-block btn-signin']'.</msg>
+<status status="PASS" starttime="20220526 10:40:30.716" endtime="20220526 10:40:31.021"/>
 </kw>
-<status status="PASS" starttime="20220525 15:00:54.052" endtime="20220525 15:00:54.575"/>
+<status status="PASS" starttime="20220526 10:40:30.532" endtime="20220526 10:40:31.021"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Login was unsuccessful</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220525 15:00:54.593" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
-<status status="PASS" starttime="20220525 15:00:54.576" endtime="20220525 15:00:54.594"/>
+<msg timestamp="20220526 10:40:31.042" level="INFO">Current page contains text 'Login was unsuccessful'.</msg>
+<status status="PASS" starttime="20220526 10:40:31.029" endtime="20220526 10:40:31.043"/>
 </kw>
-<status status="PASS" starttime="20220525 15:00:39.827" endtime="20220525 15:00:54.594"/>
+<status status="PASS" starttime="20220526 10:40:19.752" endtime="20220526 10:40:31.044"/>
 </test>
 <test id="s1-t2" name="Login with Valid Credentials" line="17">
 <kw name="LoginToApplaication" library="Omniparcelkeywords">
@@ -54,75 +54,81 @@
 <arg>id:UserName</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:00:54.596" level="INFO">Typing text 'vikas@omniparcel.com' into text field 'id:UserName'.</msg>
-<status status="PASS" starttime="20220525 15:00:54.596" endtime="20220525 15:00:54.675"/>
+<msg timestamp="20220526 10:40:31.047" level="INFO">Typing text 'vikas@omniparcel.com' into text field 'id:UserName'.</msg>
+<status status="PASS" starttime="20220526 10:40:31.046" endtime="20220526 10:40:31.125"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Password</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:00:54.675" level="INFO">Typing text 'Vikas@123' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220525 15:00:54.675" endtime="20220525 15:00:54.743"/>
+<msg timestamp="20220526 10:40:31.125" level="INFO">Typing text 'Vikas@123' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20220526 10:40:31.125" endtime="20220526 10:40:31.192"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://button[@class='btn btn-lg btn-primary btn-block btn-signin']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:00:54.743" level="INFO">Clicking element 'xpath://button[@class='btn btn-lg btn-primary btn-block btn-signin']'.</msg>
-<status status="PASS" starttime="20220525 15:00:54.743" endtime="20220525 15:00:56.571"/>
+<msg timestamp="20220526 10:40:31.192" level="INFO">Clicking element 'xpath://button[@class='btn btn-lg btn-primary btn-block btn-signin']'.</msg>
+<status status="PASS" starttime="20220526 10:40:31.192" endtime="20220526 10:40:32.337"/>
 </kw>
-<status status="PASS" starttime="20220525 15:00:54.595" endtime="20220525 15:00:56.571"/>
+<status status="PASS" starttime="20220526 10:40:31.046" endtime="20220526 10:40:32.337"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Outbound &amp; Export</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220525 15:00:56.590" level="INFO">Current page contains text 'Outbound &amp; Export'.</msg>
-<status status="PASS" starttime="20220525 15:00:56.572" endtime="20220525 15:00:56.590"/>
+<msg timestamp="20220526 10:40:32.353" level="INFO">Current page contains text 'Outbound &amp; Export'.</msg>
+<status status="PASS" starttime="20220526 10:40:32.337" endtime="20220526 10:40:32.353"/>
 </kw>
-<status status="PASS" starttime="20220525 15:00:54.595" endtime="20220525 15:00:56.591"/>
+<status status="PASS" starttime="20220526 10:40:31.045" endtime="20220526 10:40:32.353"/>
 </test>
 <test id="s1-t3" name="Verify User can be Swiched" line="21">
 <kw name="SwichedTousername" library="Omniparcelkeywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220526 10:40:35.361" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220526 10:40:32.355" endtime="20220526 10:40:35.361"/>
+</kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>iD:search-switch-site</arg>
+<arg>xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/input</arg>
 <arg>Omni Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:00:56.592" level="INFO">Typing text 'Omni Test' into text field 'iD:search-switch-site'.</msg>
-<status status="PASS" starttime="20220525 15:00:56.592" endtime="20220525 15:00:56.686"/>
+<msg timestamp="20220526 10:40:35.361" level="INFO">Typing text 'Omni Test' into text field 'xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/input'.</msg>
+<status status="PASS" starttime="20220526 10:40:35.361" endtime="20220526 10:40:35.465"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:00:57.698" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:00:56.686" endtime="20220525 15:00:57.698"/>
+<msg timestamp="20220526 10:40:36.468" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220526 10:40:35.465" endtime="20220526 10:40:36.468"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
-<arg>iD:search-switch-site</arg>
+<arg>xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/input</arg>
 <arg>BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220525 15:00:57.700" level="INFO">Sending key(s) ('BACKSPACE',) to iD:search-switch-site element.</msg>
-<msg timestamp="20220525 15:00:58.019" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20220525 15:00:58.020" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20220525 15:00:57.699" endtime="20220525 15:00:58.036"/>
+<msg timestamp="20220526 10:40:36.469" level="INFO">Sending key(s) ('BACKSPACE',) to xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/input element.</msg>
+<msg timestamp="20220526 10:40:36.755" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20220526 10:40:36.755" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20220526 10:40:36.468" endtime="20220526 10:40:36.762"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:00:59.039" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:00:58.036" endtime="20220525 15:00:59.039"/>
+<msg timestamp="20220526 10:40:37.765" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220526 10:40:36.762" endtime="20220526 10:40:37.765"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/ul</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:00:59.039" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/ul'.</msg>
-<status status="PASS" starttime="20220525 15:00:59.039" endtime="20220525 15:01:00.414"/>
+<msg timestamp="20220526 10:40:37.765" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/ul'.</msg>
+<status status="PASS" starttime="20220526 10:40:37.765" endtime="20220526 10:40:39.047"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:01.429" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:01:00.414" endtime="20220525 15:01:01.429"/>
+<msg timestamp="20220526 10:40:40.058" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220526 10:40:39.047" endtime="20220526 10:40:40.058"/>
 </kw>
-<status status="PASS" starttime="20220525 15:00:56.592" endtime="20220525 15:01:01.429"/>
+<status status="PASS" starttime="20220526 10:40:32.355" endtime="20220526 10:40:40.059"/>
 </kw>
 <kw name="Forloopforswitchuser" library="Omniparcelkeywords">
 <for flavor="IN RANGE">
@@ -134,89 +140,89 @@
 <var>${selusername}</var>
 <arg>xpath:/html/body/div[1]/div[1]/div/div[2]/div/a/span[1]/small</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:01.452" level="INFO">${selusername} = Omni Test,</msg>
-<status status="PASS" starttime="20220525 15:01:01.430" endtime="20220525 15:01:01.452"/>
+<msg timestamp="20220526 10:40:40.125" level="INFO">${selusername} = Omni Test,</msg>
+<status status="PASS" starttime="20220526 10:40:40.062" endtime="20220526 10:40:40.125"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n\n====================\n ${selusername}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220525 15:01:01.452" endtime="20220525 15:01:01.453"/>
+<status status="PASS" starttime="20220526 10:40:40.126" endtime="20220526 10:40:40.127"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>====================\n</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220525 15:01:01.453" endtime="20220525 15:01:01.453"/>
+<status status="PASS" starttime="20220526 10:40:40.127" endtime="20220526 10:40:40.128"/>
 </kw>
 <if>
 <branch type="IF" condition="'${actusername}' == '${selusername}'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n\n====================\n Switched User Successfully \n====================</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220525 15:01:01.453" endtime="20220525 15:01:01.454"/>
+<status status="PASS" starttime="20220526 10:40:40.128" endtime="20220526 10:40:40.129"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>'${actusername}' == '${selusername}'</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<msg timestamp="20220525 15:01:01.454" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20220525 15:01:01.454" endtime="20220525 15:01:01.455"/>
+<msg timestamp="20220526 10:40:40.130" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20220526 10:40:40.129" endtime="20220526 10:40:40.131"/>
 </kw>
-<status status="PASS" starttime="20220525 15:01:01.453" endtime="20220525 15:01:01.455"/>
+<status status="PASS" starttime="20220526 10:40:40.128" endtime="20220526 10:40:40.131"/>
 </branch>
 <branch type="ELSE">
 <kw name="SwichedTousername" library="Omniparcelkeywords">
-<status status="NOT RUN" starttime="20220525 15:01:01.455" endtime="20220525 15:01:01.455"/>
+<status status="NOT RUN" starttime="20220526 10:40:40.131" endtime="20220526 10:40:40.132"/>
 </kw>
-<status status="NOT RUN" starttime="20220525 15:01:01.455" endtime="20220525 15:01:01.455"/>
+<status status="NOT RUN" starttime="20220526 10:40:40.131" endtime="20220526 10:40:40.132"/>
 </branch>
-<status status="PASS" starttime="20220525 15:01:01.453" endtime="20220525 15:01:01.455"/>
+<status status="PASS" starttime="20220526 10:40:40.128" endtime="20220526 10:40:40.132"/>
 </if>
-<status status="PASS" starttime="20220525 15:01:01.430" endtime="20220525 15:01:01.455"/>
+<status status="PASS" starttime="20220526 10:40:40.062" endtime="20220526 10:40:40.132"/>
 </iter>
-<status status="PASS" starttime="20220525 15:01:01.430" endtime="20220525 15:01:01.455"/>
+<status status="PASS" starttime="20220526 10:40:40.061" endtime="20220526 10:40:40.132"/>
 </for>
-<status status="PASS" starttime="20220525 15:01:01.430" endtime="20220525 15:01:01.455"/>
+<status status="PASS" starttime="20220526 10:40:40.060" endtime="20220526 10:40:40.132"/>
 </kw>
 <kw name="User Switched Successfully" library="Omniparcelkeywords">
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${selusername_1}</var>
 <arg>xpath:/html/body/div[1]/div[1]/div/div[2]/div/a/span[1]/small</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:01.469" level="INFO">${selusername_1} = Omni Test,</msg>
-<status status="PASS" starttime="20220525 15:01:01.456" endtime="20220525 15:01:01.469"/>
+<msg timestamp="20220526 10:40:40.168" level="INFO">${selusername_1} = Omni Test,</msg>
+<status status="PASS" starttime="20220526 10:40:40.133" endtime="20220526 10:40:40.168"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n\n====================\n ${selusername_1}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220525 15:01:01.469" endtime="20220525 15:01:01.470"/>
+<status status="PASS" starttime="20220526 10:40:40.168" endtime="20220526 10:40:40.169"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>====================\n</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220525 15:01:01.470" endtime="20220525 15:01:01.470"/>
+<status status="PASS" starttime="20220526 10:40:40.169" endtime="20220526 10:40:40.169"/>
 </kw>
 <if>
 <branch type="IF" condition="'${actusername}' != '${selusername_1}'">
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n\n====================\n Run Again Your User can't Switched Omni Parcel Master Account to Omni Test</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:01.470" endtime="20220525 15:01:01.470"/>
+<status status="NOT RUN" starttime="20220526 10:40:40.170" endtime="20220526 10:40:40.170"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>====================\n</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:01.470" endtime="20220525 15:01:01.470"/>
+<status status="NOT RUN" starttime="20220526 10:40:40.170" endtime="20220526 10:40:40.170"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:01.471" endtime="20220525 15:01:01.471"/>
+<status status="NOT RUN" starttime="20220526 10:40:40.170" endtime="20220526 10:40:40.170"/>
 </kw>
-<status status="NOT RUN" starttime="20220525 15:01:01.470" endtime="20220525 15:01:01.471"/>
+<status status="NOT RUN" starttime="20220526 10:40:40.169" endtime="20220526 10:40:40.170"/>
 </branch>
-<status status="PASS" starttime="20220525 15:01:01.470" endtime="20220525 15:01:01.471"/>
+<status status="PASS" starttime="20220526 10:40:40.169" endtime="20220526 10:40:40.170"/>
 </if>
-<status status="PASS" starttime="20220525 15:01:01.456" endtime="20220525 15:01:01.471"/>
+<status status="PASS" starttime="20220526 10:40:40.133" endtime="20220526 10:40:40.170"/>
 </kw>
-<status status="PASS" starttime="20220525 15:00:56.592" endtime="20220525 15:01:01.471"/>
+<status status="PASS" starttime="20220526 10:40:32.354" endtime="20220526 10:40:40.170"/>
 </test>
 <test id="s1-t4" name="Create Outbound &amp; Export" line="25">
 <kw name="FillReceiverandPackages" library="Omniparcelkeywords">
@@ -224,257 +230,204 @@
 <arg>xpath://select[@id='Destination_CountryCode']</arg>
 <arg>NEW ZEALAND</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220525 15:01:01.473" level="INFO">Selecting options from selection list 'xpath://select[@id='Destination_CountryCode']' by label NEW ZEALAND.</msg>
-<status status="PASS" starttime="20220525 15:01:01.473" endtime="20220525 15:01:01.552"/>
+<msg timestamp="20220526 10:40:40.172" level="INFO">Selecting options from selection list 'xpath://select[@id='Destination_CountryCode']' by label NEW ZEALAND.</msg>
+<status status="PASS" starttime="20220526 10:40:40.172" endtime="20220526 10:40:40.270"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:Destination_Name</arg>
 <arg>test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:01.553" level="INFO">Typing text 'test' into text field 'id:Destination_Name'.</msg>
-<status status="PASS" starttime="20220525 15:01:01.552" endtime="20220525 15:01:01.673"/>
+<msg timestamp="20220526 10:40:40.270" level="INFO">Typing text 'test' into text field 'id:Destination_Name'.</msg>
+<status status="PASS" starttime="20220526 10:40:40.270" endtime="20220526 10:40:40.397"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:02.687" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:01:01.673" endtime="20220525 15:01:02.687"/>
+<msg timestamp="20220526 10:40:41.410" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220526 10:40:40.398" endtime="20220526 10:40:41.410"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>id:Destination_Name</arg>
 <arg>ENTER</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220525 15:01:02.687" level="INFO">Sending key(s) ('ENTER',) to id:Destination_Name element.</msg>
-<msg timestamp="20220525 15:01:02.961" level="INFO">Pressing special key ENTER to element.</msg>
-<msg timestamp="20220525 15:01:02.961" level="INFO">Releasing special key ENTER.</msg>
-<status status="PASS" starttime="20220525 15:01:02.687" endtime="20220525 15:01:02.970"/>
+<msg timestamp="20220526 10:40:41.412" level="INFO">Sending key(s) ('ENTER',) to id:Destination_Name element.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220526 10:40:41.417" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:41.413" endtime="20220526 10:40:41.428"/>
+</kw>
+<msg timestamp="20220526 10:40:41.428" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:41.430" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:41.411" endtime="20220526 10:40:41.431"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:03.977" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:01:02.970" endtime="20220525 15:01:03.977"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.432" endtime="20220526 10:40:41.432"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:stock_length_1</arg>
 <arg>1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:03.978" level="INFO">Typing text '1' into text field 'id:stock_length_1'.</msg>
-<status status="PASS" starttime="20220525 15:01:03.978" endtime="20220525 15:01:04.145"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.432" endtime="20220526 10:40:41.432"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:stock_width_1</arg>
 <arg>1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:04.146" level="INFO">Typing text '1' into text field 'id:stock_width_1'.</msg>
-<status status="PASS" starttime="20220525 15:01:04.145" endtime="20220525 15:01:04.234"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.432" endtime="20220526 10:40:41.432"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:stock_height_1</arg>
 <arg>1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:04.234" level="INFO">Typing text '1' into text field 'id:stock_height_1'.</msg>
-<status status="PASS" starttime="20220525 15:01:04.234" endtime="20220525 15:01:04.323"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.432" endtime="20220526 10:40:41.432"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:stock_kg_1</arg>
 <arg>1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:04.324" level="INFO">Typing text '1' into text field 'id:stock_kg_1'.</msg>
-<status status="PASS" starttime="20220525 15:01:04.323" endtime="20220525 15:01:04.410"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.433" endtime="20220526 10:40:41.433"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:05.411" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:01:04.410" endtime="20220525 15:01:05.411"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.433" endtime="20220526 10:40:41.433"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:commo_ItemSKU_0</arg>
 <arg>NZ00012</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:05.412" level="INFO">Typing text 'NZ00012' into text field 'id:commo_ItemSKU_0'.</msg>
-<status status="PASS" starttime="20220525 15:01:05.412" endtime="20220525 15:01:05.561"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.433" endtime="20220526 10:40:41.433"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>id:commo_kg_0</arg>
 <arg>CONTROL+A</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220525 15:01:05.562" level="INFO">Sending key(s) ('CONTROL+A',) to id:commo_kg_0 element.</msg>
-<msg timestamp="20220525 15:01:05.880" level="INFO">Pressing special key CONTROL down.</msg>
-<msg timestamp="20220525 15:01:05.881" level="INFO">Sending key A</msg>
-<msg timestamp="20220525 15:01:05.881" level="INFO">Releasing special key CONTROL.</msg>
-<status status="PASS" starttime="20220525 15:01:05.562" endtime="20220525 15:01:05.891"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.433" endtime="20220526 10:40:41.434"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>id:commo_kg_0</arg>
 <arg>DELETE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220525 15:01:05.892" level="INFO">Sending key(s) ('DELETE',) to id:commo_kg_0 element.</msg>
-<msg timestamp="20220525 15:01:06.183" level="INFO">Pressing special key DELETE to element.</msg>
-<msg timestamp="20220525 15:01:06.183" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20220525 15:01:05.891" endtime="20220525 15:01:06.192"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.434" endtime="20220526 10:40:41.434"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:07.204" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:01:06.192" endtime="20220525 15:01:07.204"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.434" endtime="20220526 10:40:41.434"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:commo_kg_0</arg>
 <arg>10</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:07.205" level="INFO">Typing text '10' into text field 'id:commo_kg_0'.</msg>
-<status status="PASS" starttime="20220525 15:01:07.205" endtime="20220525 15:01:07.327"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.434" endtime="20220526 10:40:41.434"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:commo_units_0</arg>
 <arg>5</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:07.328" level="INFO">Typing text '5' into text field 'id:commo_units_0'.</msg>
-<status status="PASS" starttime="20220525 15:01:07.327" endtime="20220525 15:01:07.404"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.434" endtime="20220526 10:40:41.434"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:commo_price_0</arg>
 <arg>100</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:07.405" level="INFO">Typing text '100' into text field 'id:commo_price_0'.</msg>
-<status status="PASS" starttime="20220525 15:01:07.404" endtime="20220525 15:01:07.495"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.435" endtime="20220526 10:40:41.435"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:08.496" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:01:07.495" endtime="20220525 15:01:08.496"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.435" endtime="20220526 10:40:41.435"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>id:btncalculate</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220525 15:01:08.497" endtime="20220525 15:01:08.809"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.435" endtime="20220526 10:40:41.435"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:btncalculate</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:08.810" level="INFO">Clicking element 'id:btncalculate'.</msg>
-<status status="PASS" starttime="20220525 15:01:08.809" endtime="20220525 15:01:08.916"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.435" endtime="20220526 10:40:41.435"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:11.921" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220525 15:01:08.917" endtime="20220525 15:01:11.921"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.435" endtime="20220526 10:40:41.435"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath://tbody/tr[1]/td[2]/button[1]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220525 15:01:11.922" endtime="20220525 15:01:12.250"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.436" endtime="20220526 10:40:41.436"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:14.259" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220525 15:01:12.250" endtime="20220525 15:01:14.259"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.436" endtime="20220526 10:40:41.436"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://tbody[@id='tblrates-body']/tr[1]//button[@class='btn btn-primary']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:14.260" level="INFO">Clicking element 'xpath://tbody[@id='tblrates-body']/tr[1]//button[@class='btn btn-primary']'.</msg>
-<status status="PASS" starttime="20220525 15:01:14.260" endtime="20220525 15:01:14.376"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.436" endtime="20220526 10:40:41.436"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:19.392" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220525 15:01:14.377" endtime="20220525 15:01:19.392"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.436" endtime="20220526 10:40:41.436"/>
 </kw>
-<status status="PASS" starttime="20220525 15:01:01.473" endtime="20220525 15:01:19.393"/>
+<status status="FAIL" starttime="20220526 10:40:40.171" endtime="20220526 10:40:41.437"/>
 </kw>
 <kw name="Copy Cannot Number" library="Omniparcelkeywords">
-<try>
-<branch type="TRY">
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${connoteno}</var>
-<arg>xpath://*[@id="wrap"]/div[2]/div[2]/a</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220525 15:01:19.606" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220525 15:01:19.436" endtime="20220525 15:01:19.606"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.438" endtime="20220526 10:40:41.438"/>
 </kw>
-<msg timestamp="20220525 15:01:19.606" level="FAIL">Element with locator 'xpath://*[@id="wrap"]/div[2]/div[2]/a' not found.</msg>
-<status status="FAIL" starttime="20220525 15:01:19.396" endtime="20220525 15:01:19.609"/>
-</kw>
-<kw name="Fetch From Right" library="String">
-<var>${connoteno1}</var>
-<arg>${connoteno}</arg>
-<arg>C</arg>
-<doc>Returns contents of the ``string`` after the last occurrence of ``marker``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:19.610" endtime="20220525 15:01:19.610"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>\n\n====================\n CONNOTE NO.....0 IS :- \n ${connoteno}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:19.610" endtime="20220525 15:01:19.610"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>====================\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:19.610" endtime="20220525 15:01:19.610"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${cpyconnotenumber}</arg>
-<arg>${connoteno}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:19.610" endtime="20220525 15:01:19.610"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>\n\n====================\n ${cpyconnotenumber}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:19.610" endtime="20220525 15:01:19.610"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>====================\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:19.611" endtime="20220525 15:01:19.611"/>
-</kw>
-<status status="FAIL" starttime="20220525 15:01:19.395" endtime="20220525 15:01:19.611"/>
-</branch>
-<branch type="EXCEPT">
-<kw name="Log To Console" library="BuiltIn">
-<arg>\n\n====================\n Try Next time...... \n====================\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220525 15:01:19.611" endtime="20220525 15:01:19.611"/>
-</kw>
-<status status="PASS" starttime="20220525 15:01:19.611" endtime="20220525 15:01:19.611"/>
-</branch>
-<status status="PASS" starttime="20220525 15:01:19.395" endtime="20220525 15:01:19.611"/>
-</try>
-<status status="PASS" starttime="20220525 15:01:19.394" endtime="20220525 15:01:19.612"/>
-</kw>
-<status status="PASS" starttime="20220525 15:01:01.472" endtime="20220525 15:01:19.612"/>
+<status status="FAIL" starttime="20220526 10:40:40.171" endtime="20220526 10:40:41.438">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</status>
 </test>
 <test id="s1-t5" name="Get Manifest for Shipment" line="28">
 <kw name="Reprint &amp; Manifests" library="Omniparcelkeywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://a[.='Reprint &amp; Manifests']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:19.614" level="INFO">Clicking element 'xpath://a[.='Reprint &amp; Manifests']'.</msg>
-<status status="PASS" starttime="20220525 15:01:19.614" endtime="20220525 15:01:20.868"/>
+<msg timestamp="20220526 10:40:41.443" level="INFO">Clicking element 'xpath://a[.='Reprint &amp; Manifests']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220526 10:40:41.448" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:41.444" endtime="20220526 10:40:41.449"/>
+</kw>
+<msg timestamp="20220526 10:40:41.449" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:41.451" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:41.443" endtime="20220526 10:40:41.452"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>15</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:35.868" level="INFO">Slept 15 seconds</msg>
-<status status="PASS" starttime="20220525 15:01:20.868" endtime="20220525 15:01:35.868"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.452" endtime="20220526 10:40:41.452"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${length}</var>
 <arg>${cpyconnotenumber}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20220525 15:01:35.868" level="INFO">Length is 0</msg>
-<msg timestamp="20220525 15:01:35.868" level="INFO">${length} = 0</msg>
-<status status="PASS" starttime="20220525 15:01:35.868" endtime="20220525 15:01:35.868"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.453" endtime="20220526 10:40:41.453"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${length} == 0</arg>
@@ -483,109 +436,39 @@
 <arg>Log To Console</arg>
 <arg>\n\n====================\n Number copy successfully...1 \n====================\n</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Copy Cannot Number" library="Omniparcelkeywords">
-<try>
-<branch type="TRY">
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${connoteno}</var>
-<arg>xpath://*[@id="wrap"]/div[2]/div[2]/a</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220525 15:01:36.007" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220525 15:01:35.882" endtime="20220525 15:01:36.007"/>
-</kw>
-<msg timestamp="20220525 15:01:36.007" level="FAIL">Element with locator 'xpath://*[@id="wrap"]/div[2]/div[2]/a' not found.</msg>
-<status status="FAIL" starttime="20220525 15:01:35.869" endtime="20220525 15:01:36.008"/>
-</kw>
-<kw name="Fetch From Right" library="String">
-<var>${connoteno1}</var>
-<arg>${connoteno}</arg>
-<arg>C</arg>
-<doc>Returns contents of the ``string`` after the last occurrence of ``marker``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:36.008" endtime="20220525 15:01:36.008"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>\n\n====================\n CONNOTE NO.....0 IS :- \n ${connoteno}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:36.008" endtime="20220525 15:01:36.008"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>====================\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:36.009" endtime="20220525 15:01:36.009"/>
-</kw>
-<kw name="Append To List" library="Collections">
-<arg>${cpyconnotenumber}</arg>
-<arg>${connoteno}</arg>
-<doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:36.009" endtime="20220525 15:01:36.009"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>\n\n====================\n ${cpyconnotenumber}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:36.009" endtime="20220525 15:01:36.009"/>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>====================\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:36.009" endtime="20220525 15:01:36.009"/>
-</kw>
-<status status="FAIL" starttime="20220525 15:01:35.869" endtime="20220525 15:01:36.009"/>
-</branch>
-<branch type="EXCEPT">
-<kw name="Log To Console" library="BuiltIn">
-<arg>\n\n====================\n Try Next time...... \n====================\n</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220525 15:01:36.009" endtime="20220525 15:01:36.010"/>
-</kw>
-<status status="PASS" starttime="20220525 15:01:36.009" endtime="20220525 15:01:36.010"/>
-</branch>
-<status status="PASS" starttime="20220525 15:01:35.869" endtime="20220525 15:01:36.010"/>
-</try>
-<status status="PASS" starttime="20220525 15:01:35.869" endtime="20220525 15:01:36.010"/>
-</kw>
-<status status="PASS" starttime="20220525 15:01:35.869" endtime="20220525 15:01:36.010"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.453" endtime="20220526 10:40:41.453"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:38.022" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220525 15:01:36.010" endtime="20220525 15:01:38.022"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.453" endtime="20220526 10:40:41.454"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:filter</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:38.023" level="INFO">Clicking element 'id:filter'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220525 15:01:38.187" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220525 15:01:38.056" endtime="20220525 15:01:38.187"/>
-</kw>
-<msg timestamp="20220525 15:01:38.187" level="FAIL">Element with locator 'id:filter' not found.</msg>
-<status status="FAIL" starttime="20220525 15:01:38.023" endtime="20220525 15:01:38.188"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.454" endtime="20220526 10:40:41.454"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.188" endtime="20220525 15:01:38.188"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.454" endtime="20220526 10:40:41.454"/>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>css:#filter</arg>
 <arg>876|0</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.188" endtime="20220525 15:01:38.188"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.454" endtime="20220526 10:40:41.454"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.188" endtime="20220525 15:01:38.188"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.454" endtime="20220526 10:40:41.454"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${length}</var>
 <arg>${cpyconnotenumber}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.189" endtime="20220525 15:01:38.189"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.454" endtime="20220526 10:40:41.454"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${length} == 0</arg>
@@ -594,18 +477,18 @@
 <arg>Log To Console</arg>
 <arg>\n\n====================\n Number copy successfully...2 \n====================\n</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.189" endtime="20220525 15:01:38.189"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.454" endtime="20220526 10:40:41.455"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.189" endtime="20220525 15:01:38.189"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.455"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${length}</var>
 <arg>${cpyconnotenumber}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.189" endtime="20220525 15:01:38.189"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.455"/>
 </kw>
 <if>
 <branch type="IF" condition="${length} == 0">
@@ -613,144 +496,666 @@
 <var>${conno}</var>
 <arg>xpath:/html/body/div[1]/div[2]/div[2]/div[1]/form[2]/div/div/table/tbody/tr[1]/td[2]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.189" endtime="20220525 15:01:38.189"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.455"/>
 </kw>
 <kw name="Fetch From Right" library="String">
 <var>${Conno1}</var>
 <arg>${conno}</arg>
 <arg>C</arg>
 <doc>Returns contents of the ``string`` after the last occurrence of ``marker``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.189" endtime="20220525 15:01:38.189"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.455"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n\n====================\n CONNOTE NO.....1 IS :- \n ${conno}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.190" endtime="20220525 15:01:38.190"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.455"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>====================\n</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.190" endtime="20220525 15:01:38.190"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.455"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${cpyconnotenumber}</arg>
 <arg>${conno}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.190" endtime="20220525 15:01:38.190"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.456"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n\n====================\n ${cpyconnotenumber}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.190" endtime="20220525 15:01:38.190"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.456" endtime="20220526 10:40:41.456"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>====================\n</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.190" endtime="20220525 15:01:38.190"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.456" endtime="20220526 10:40:41.456"/>
 </kw>
-<status status="NOT RUN" starttime="20220525 15:01:38.189" endtime="20220525 15:01:38.190"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.456"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" library="BuiltIn">
 <arg>\n\n====================\n Number copy successfully...3 \n====================\n</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.191" endtime="20220525 15:01:38.191"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.456" endtime="20220526 10:40:41.456"/>
 </kw>
-<status status="NOT RUN" starttime="20220525 15:01:38.190" endtime="20220525 15:01:38.191"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.456" endtime="20220526 10:40:41.456"/>
 </branch>
-<status status="NOT RUN" starttime="20220525 15:01:38.189" endtime="20220525 15:01:38.191"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.455" endtime="20220526 10:40:41.456"/>
 </if>
 <kw name="Select Checkbox" library="SeleniumLibrary">
 <arg>css:[value='${cpyconnotenumber}[0]']</arg>
 <doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.191" endtime="20220525 15:01:38.191"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.456" endtime="20220526 10:40:41.456"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>id:btnsendmanifest</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.191" endtime="20220525 15:01:38.191"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.456" endtime="20220526 10:40:41.456"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id:btnsendmanifest</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220525 15:01:38.191" endtime="20220525 15:01:38.191"/>
+<status status="NOT RUN" starttime="20220526 10:40:41.456" endtime="20220526 10:40:41.456"/>
 </kw>
-<status status="FAIL" starttime="20220525 15:01:19.614" endtime="20220525 15:01:38.191"/>
+<status status="FAIL" starttime="20220526 10:40:41.442" endtime="20220526 10:40:41.457"/>
 </kw>
-<status status="FAIL" starttime="20220525 15:01:19.613" endtime="20220525 15:01:38.193">Element with locator 'id:filter' not found.</status>
+<status status="FAIL" starttime="20220526 10:40:41.441" endtime="20220526 10:40:41.458">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</status>
 </test>
 <test id="s1-t6" name="Fetch Shipment Report" line="30">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${Shipingurlweb1}[1]</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220525 15:01:38.196" level="INFO">Opening browser 'chrome' to base url 'https://op-web2.omniparcel.com/ShipmentReport'.</msg>
-<status status="PASS" starttime="20220525 15:01:38.195" endtime="20220525 15:01:48.467"/>
+<msg timestamp="20220526 10:40:41.460" level="INFO">Opening browser 'chrome' to base url 'https://op-web2.omniparcel.com/ShipmentReport'.</msg>
+<status status="PASS" starttime="20220526 10:40:41.460" endtime="20220526 10:40:46.032"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220525 15:01:48.468" endtime="20220525 15:01:48.592"/>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220526 10:40:46.036" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:46.034" endtime="20220526 10:40:46.038"/>
+</kw>
+<msg timestamp="20220526 10:40:46.038" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:46.040" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:46.033" endtime="20220526 10:40:46.040"/>
 </kw>
 <kw name="LoginToApplaication" library="Omniparcelkeywords">
 <arg>vikas@omniparcel.com</arg>
 <arg>Vikas@123</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:UserName</arg>
-<arg>${Username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:48.594" level="INFO">Typing text 'vikas@omniparcel.com' into text field 'id:UserName'.</msg>
-<status status="PASS" starttime="20220525 15:01:48.593" endtime="20220525 15:01:48.680"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:Password</arg>
-<arg>${Password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:48.680" level="INFO">Typing text 'Vikas@123' into text field 'id:Password'.</msg>
-<status status="PASS" starttime="20220525 15:01:48.680" endtime="20220525 15:01:48.763"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://button[@class='btn btn-lg btn-primary btn-block btn-signin']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:48.764" level="INFO">Clicking element 'xpath://button[@class='btn btn-lg btn-primary btn-block btn-signin']'.</msg>
-<status status="PASS" starttime="20220525 15:01:48.764" endtime="20220525 15:01:49.769"/>
-</kw>
-<status status="PASS" starttime="20220525 15:01:48.593" endtime="20220525 15:01:49.769"/>
+<status status="NOT RUN" starttime="20220526 10:40:46.041" endtime="20220526 10:40:46.041"/>
 </kw>
 <kw name="SwichedTousername" library="Omniparcelkeywords">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>iD:search-switch-site</arg>
-<arg>Omni Test</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:49.770" level="INFO">Typing text 'Omni Test' into text field 'iD:search-switch-site'.</msg>
-<status status="PASS" starttime="20220525 15:01:49.770" endtime="20220525 15:01:49.864"/>
+<status status="NOT RUN" starttime="20220526 10:40:46.041" endtime="20220526 10:40:46.041"/>
+</kw>
+<kw name="Forloopforswitchuser" library="Omniparcelkeywords">
+<status status="NOT RUN" starttime="20220526 10:40:46.041" endtime="20220526 10:40:46.042"/>
+</kw>
+<kw name="User Switched Successfully" library="Omniparcelkeywords">
+<status status="NOT RUN" starttime="20220526 10:40:46.042" endtime="20220526 10:40:46.042"/>
+</kw>
+<kw name="Shipment Report" library="Omniparcelkeywords">
+<status status="NOT RUN" starttime="20220526 10:40:46.042" endtime="20220526 10:40:46.042"/>
+</kw>
+<status status="FAIL" starttime="20220526 10:40:41.459" endtime="20220526 10:40:46.043">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</status>
+</test>
+<test id="s1-t7" name="Check Scan - Origin Scanning" line="38">
+<kw name="Check Scan - Origin Scanning" library="Omniparcelkeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.nav &gt; li:nth-of-type(3) &gt; .dropdown-toggle</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220526 10:40:46.045" level="INFO">Clicking element 'css:.nav &gt; li:nth-of-type(3) &gt; .dropdown-toggle'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220526 10:40:46.066" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:46.047" endtime="20220526 10:40:46.067"/>
+</kw>
+<msg timestamp="20220526 10:40:46.067" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:46.069" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:46.045" endtime="20220526 10:40:46.070"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:50.875" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:01:49.864" endtime="20220525 15:01:50.875"/>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<arg>iD:search-switch-site</arg>
-<arg>BACKSPACE</arg>
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220525 15:01:50.877" level="INFO">Sending key(s) ('BACKSPACE',) to iD:search-switch-site element.</msg>
-<msg timestamp="20220525 15:01:51.210" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20220525 15:01:51.210" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20220525 15:01:50.876" endtime="20220525 15:01:51.225"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220525 15:01:52.228" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220525 15:01:51.226" endtime="20220525 15:01:52.228"/>
+<status status="NOT RUN" starttime="20220526 10:40:46.070" endtime="20220526 10:40:46.070"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/ul</arg>
+<arg>css:.nav &gt; li:nth-of-type(3) &gt; .dropdown-menu &gt; li:nth-of-type(1) &gt; a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220525 15:01:52.228" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div[1]/span/form/span/ul'.</msg>
-<status status="PASS" starttime="20220525 15:01:52.228" endtime="20220525 15:01:52.915"/>
+<status status="NOT RUN" starttime="20220526 10:40:46.070" endtime="20220526 10:40:46.070"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.070" endtime="20220526 10:40:46.070"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:barcode</arg>
+<arg>${cpyconnotenumber}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.071" endtime="20220526 10:40:46.071"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:btnsubmit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.071" endtime="20220526 10:40:46.071"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.071" endtime="20220526 10:40:46.071"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Last_Scan_Barcode}</var>
+<arg>xpath:/html/body/div[1]/div[2]/div[2]/div[1]/form/div[8]/div/div</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.071" endtime="20220526 10:40:46.071"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\n====================\n Last Scan Barcode Result Is :- \n ${Last_Scan_Barcode}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.071" endtime="20220526 10:40:46.071"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>====================\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.071" endtime="20220526 10:40:46.072"/>
+</kw>
+<status status="FAIL" starttime="20220526 10:40:46.045" endtime="20220526 10:40:46.072"/>
+</kw>
+<status status="FAIL" starttime="20220526 10:40:46.044" endtime="20220526 10:40:46.073">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</status>
+</test>
+<test id="s1-t8" name="Check scanned and awaiting assignment to flight/vessel" line="40">
+<kw name="Consolidate to MAWB" library="Omniparcelkeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.nav &gt; li:nth-of-type(3) &gt; .dropdown-toggle</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220526 10:40:46.082" level="INFO">Clicking element 'css:.nav &gt; li:nth-of-type(3) &gt; .dropdown-toggle'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220526 10:40:46.089" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:46.086" endtime="20220526 10:40:46.090"/>
+</kw>
+<msg timestamp="20220526 10:40:46.090" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:46.093" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:46.081" endtime="20220526 10:40:46.093"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.094" endtime="20220526 10:40:46.094"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.nav &gt; li:nth-of-type(3) li:nth-of-type(9) &gt; a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.094" endtime="20220526 10:40:46.094"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.094" endtime="20220526 10:40:46.094"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:ConsolidationHubId</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.094" endtime="20220526 10:40:46.094"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:ConsolidationHubId</arg>
+<arg>TEST</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.094" endtime="20220526 10:40:46.094"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.095" endtime="20220526 10:40:46.095"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>css:[data-manifest="${cpyconnotenumber}[2]"][name='selected']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.095" endtime="20220526 10:40:46.095"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>id:btnmwab</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.095" endtime="20220526 10:40:46.095"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:btnmwab</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.095" endtime="20220526 10:40:46.095"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.095" endtime="20220526 10:40:46.095"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:OriginCountry</arg>
+<arg>AUSTRALIA</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.095" endtime="20220526 10:40:46.095"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.096" endtime="20220526 10:40:46.096"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:PortOfDischargeId</arg>
+<arg>SYDNEY &gt; SYD</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.096" endtime="20220526 10:40:46.096"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.096" endtime="20220526 10:40:46.096"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:OriginAgent</arg>
+<arg>SYDNEY &gt; SYD &gt; Seko</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.096" endtime="20220526 10:40:46.097"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.097" endtime="20220526 10:40:46.097"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:DestinationCountry</arg>
+<arg>NEW ZEALAND</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.097" endtime="20220526 10:40:46.097"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.097" endtime="20220526 10:40:46.097"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:PortOfLadingId</arg>
+<arg>AUCKLAND &gt; AKL</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.098" endtime="20220526 10:40:46.098"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.098" endtime="20220526 10:40:46.098"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:DestinationAgent</arg>
+<arg>AUCKLAND &gt; AKL &gt; Seko</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.098" endtime="20220526 10:40:46.098"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.098" endtime="20220526 10:40:46.099"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:VesselNumber</arg>
+<arg>4477777444</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.099" endtime="20220526 10:40:46.099"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.099" endtime="20220526 10:40:46.099"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ThreeMAWB</arg>
+<arg>${MAWB}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.099" endtime="20220526 10:40:46.099"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${cpyconnotenumber}</arg>
+<arg>${MAWB}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.099" endtime="20220526 10:40:46.099"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.099" endtime="20220526 10:40:46.099"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:EightMAWB</arg>
+<arg>${MAWB_1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.099" endtime="20220526 10:40:46.100"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${cpyconnotenumber}</arg>
+<arg>${MAWB_1}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.100" endtime="20220526 10:40:46.100"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.100" endtime="20220526 10:40:46.100"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\n====================\n ${cpyconnotenumber}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.100" endtime="20220526 10:40:46.100"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>====================\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.100" endtime="20220526 10:40:46.100"/>
+</kw>
+<kw name="Get Current Date" library="DateTime">
+<var>${Current_Date}</var>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.100" endtime="20220526 10:40:46.100"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Current_Date}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.100" endtime="20220526 10:40:46.101"/>
+</kw>
+<kw name="Add Time To Date" library="DateTime">
+<var>${Add_Day}</var>
+<arg>${Current_Date}</arg>
+<arg>1 days</arg>
+<doc>Adds time to date and returns the resulting date.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.101" endtime="20220526 10:40:46.101"/>
+</kw>
+<kw name="Convert Date" library="DateTime">
+<var>${Next_Date}</var>
+<arg>${Add_Day}</arg>
+<arg>result_format=%d-%b-%Y %H:%M</arg>
+<doc>Converts between supported `date formats`.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.101" endtime="20220526 10:40:46.101"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Next_Date}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.101" endtime="20220526 10:40:46.101"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ETA</arg>
+<arg>${Next_Date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.101" endtime="20220526 10:40:46.101"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.101" endtime="20220526 10:40:46.101"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:.ui-datepicker-close</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.101" endtime="20220526 10:40:46.101"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.101" endtime="20220526 10:40:46.102"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:consolidateButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.102" endtime="20220526 10:40:46.102"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.102" endtime="20220526 10:40:46.102"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Handle Alert" library="SeleniumLibrary">
+<var>${message}</var>
+<arg>action=ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.102" endtime="20220526 10:40:46.102"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\n====================\n MAWB allocate Alert Msg Is :- \n ${message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.102" endtime="20220526 10:40:46.102"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>====================\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.102" endtime="20220526 10:40:46.102"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.103" endtime="20220526 10:40:46.103"/>
+</kw>
+<status status="NOT RUN" starttime="20220526 10:40:46.102" endtime="20220526 10:40:46.103"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\n====================\n Alert not Display \n====================\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.103" endtime="20220526 10:40:46.103"/>
+</kw>
+<status status="NOT RUN" starttime="20220526 10:40:46.103" endtime="20220526 10:40:46.103"/>
+</branch>
+<status status="NOT RUN" starttime="20220526 10:40:46.102" endtime="20220526 10:40:46.103"/>
+</try>
+<status status="FAIL" starttime="20220526 10:40:46.081" endtime="20220526 10:40:46.103"/>
+</kw>
+<kw name="Wait For Process" library="Process">
+<doc>Waits for the process to complete or to reach the given timeout.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:46.104" endtime="20220526 10:40:46.104"/>
+</kw>
+<status status="FAIL" starttime="20220526 10:40:46.077" endtime="20220526 10:40:46.105">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</status>
+</test>
+<test id="s1-t9" name="Scan the international barcode to verify if goods are cleared by customs" line="43">
+<kw name="Import &gt;&gt; Customs Release Check" library="Omniparcelkeywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220526 10:40:48.123" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220526 10:40:46.111" endtime="20220526 10:40:48.123"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.nav &gt; li:nth-of-type(4) &gt; .dropdown-toggle</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220526 10:40:48.124" level="INFO">Clicking element 'css:.nav &gt; li:nth-of-type(4) &gt; .dropdown-toggle'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220526 10:40:48.139" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:48.129" endtime="20220526 10:40:48.142"/>
+</kw>
+<msg timestamp="20220526 10:40:48.142" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:48.147" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<status status="FAIL" starttime="20220526 10:40:48.124" endtime="20220526 10:40:48.149"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.150" endtime="20220526 10:40:48.150"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[.='Customs Release Check']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.150" endtime="20220526 10:40:48.150"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.150" endtime="20220526 10:40:48.152"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[.='Select']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.152" endtime="20220526 10:40:48.152"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://div[@class='chosen-search']/input[1]</arg>
+<arg>${cpyconnotenumber}[3]${cpyconnotenumber}[4]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.153" endtime="20220526 10:40:48.153"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.153" endtime="20220526 10:40:48.153"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath://div[@class='chosen-search']/input[1]</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.154" endtime="20220526 10:40:48.154"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.154" endtime="20220526 10:40:48.154"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:barcode</arg>
+<arg>${cpyconnotenumber}[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.155" endtime="20220526 10:40:48.155"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.155" endtime="20220526 10:40:48.155"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:btnsubmit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.157" endtime="20220526 10:40:48.157"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='confirm']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.158" endtime="20220526 10:40:48.158"/>
+</kw>
+<status status="NOT RUN" starttime="20220526 10:40:48.157" endtime="20220526 10:40:48.158"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Barcode_verify}</var>
+<arg>css:.form-horizontal &gt; div:nth-of-type(4) &gt; .col-sm-5 &gt; div</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.159" endtime="20220526 10:40:48.159"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\n====================\n MAWB allocate Alert Msg Is :- \n ${Barcode_verify}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.160" endtime="20220526 10:40:48.160"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>====================\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220526 10:40:48.160" endtime="20220526 10:40:48.160"/>
+</kw>
+<status status="NOT RUN" starttime="20220526 10:40:48.158" endtime="20220526 10:40:48.161"/>
+</branch>
+<status status="NOT RUN" starttime="20220526 10:40:48.157" endtime="20220526 10:40:48.161"/>
+</try>
+<status status="FAIL" starttime="20220526 10:40:46.110" endtime="20220526 10:40:48.163"/>
+</kw>
+<status status="FAIL" starttime="20220526 10:40:46.109" endtime="20220526 10:40:48.163">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</status>
+</test>
+<status status="FAIL" starttime="20220526 10:40:19.288" endtime="20220526 10:40:48.167"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="6" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220526 10:40:41.428" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:41.449" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:46.038" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:46.067" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:46.090" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+<msg timestamp="20220526 10:40:48.142" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.67)
+</msg>
+</errors>
+</robot>
