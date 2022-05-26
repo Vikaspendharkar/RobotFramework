@@ -9,7 +9,7 @@ Library    Process
 
 *** Test Cases ***
 Login with InValid Credentials
-    Open Browser  ${Login_url}[1]   chrome
+    Open Browser  ${Login_url}[1]   browser
     Maximize Browser Window
     LoginToApplaication  vikas@omniparcel.com    Vikas@1234
     Page Should Contain    Login was unsuccessful
