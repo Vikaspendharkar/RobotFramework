@@ -17,6 +17,7 @@ LoginToApplaication
 
 
 SwichedTousername
+    Sleep    3
     Input Text  id:search-switch-site  Omni Test
     Sleep    1
     Press Keys  id:search-switch-site   BACKSPACE
