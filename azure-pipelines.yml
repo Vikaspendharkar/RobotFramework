@@ -10,33 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  LT_USERNAME: '# Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
-trigger:
-- master
-
-pool:
-  vmImage: 'Ubuntu-16.04'
-
-variables:
   LT_USERNAME: 'sstech.vikas'
-  LT_ACCESS_KEY: 'AxBfN4Q6R6uS6x5msS0s4oTeAp3ygUCTurcaWUvJoofGaRYxkM'
-
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
-
-- script: |
-    npm install
-    npm install -g protractor
-    cd conf
-    protractor single.conf.js
-  displayName: 'npm install and build''
   LT_ACCESS_KEY: 'AxBfN4Q6R6uS6x5msS0s4oTeAp3ygUCTurcaWUvJoofGaRYxkM'
 
 steps:
